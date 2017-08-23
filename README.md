@@ -132,6 +132,11 @@ hybridAPI.exitConfirm({
 设置右侧菜单：
 
 ```js
+// text: 右上角按钮文字
+// iconHash: 与 text 二选一，右上角按钮 icon hash
+// overflow: 该按钮是否默认被收起
+// eventName: 在 document 中注册的事件名称
+// action: 在 document 中注册的事件回调
 hybridAPI.setRightMenu([
   { text, eventName, action, iconHash, overflow },
 ])
